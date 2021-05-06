@@ -146,6 +146,8 @@ namespace AspCoreMVC_Starter.Areas.Identity.Pages.Account.Manage
 
         private string GenerateQrCodeUri(string email, string unformattedKey)
         {
+            // TODO: Replace "AspCoreMVC_Starter" 2FA Authenticator app website name
+            // with your desired website name
             return string.Format(
                 AuthenticatorUriFormat,
                 _urlEncoder.Encode("AspCoreMVC_Starter"),
