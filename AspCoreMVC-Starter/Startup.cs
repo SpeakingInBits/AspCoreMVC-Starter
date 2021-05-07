@@ -33,6 +33,7 @@ namespace AspCoreMVC_Starter
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(IdentityHelper.ConfigureIdentitySettings)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
         }
