@@ -9,7 +9,6 @@ namespace AspCoreMVC_Starter.Data
     public class IdentityHelper
     {
         public const string AdminRole = "Admin";
-        public const string OwnerRole = "Owner";
 
         public static IEnumerable<string> GetRoles()
         {
@@ -17,8 +16,7 @@ namespace AspCoreMVC_Starter.Data
             // to use roles for Authorization
             return new string[]
             {
-                AdminRole,
-                OwnerRole
+                AdminRole
             };
         }
 
