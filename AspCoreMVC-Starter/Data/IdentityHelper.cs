@@ -8,6 +8,18 @@ namespace AspCoreMVC_Starter.Data
 {
     public class IdentityHelper
     {
+        public const string AdminRole = "Admin";
+
+        public static IEnumerable<string> GetRoles()
+        {
+            // TODO: Add custom roles here. Add roles to fields above
+            // to use roles for Authorization
+            return new string[]
+            {
+                AdminRole
+            };
+        }
+
         internal static void ConfigureIdentitySettings(IdentityOptions options)
         {
             // TODO: Configure your password requirements
